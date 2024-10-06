@@ -1,0 +1,15 @@
+#Python weight converter:-
+
+Weight = float(input("Enter your weight which you want to be convert: "))
+Unit = input("Kilograms 'kgs' or Pounds 'lbs' ?")
+
+if Unit == "kgs":
+    Weight = Weight * 2.205
+    Unit = "lbs"
+    print(f"Your weight in pound is: {round(Weight,2)} {Unit}")
+elif Unit == "lbs":
+    Weight = Weight / 2.205
+    Unit = "kgs"
+    print(f"Your weight in pound is: {round(Weight,2)} {Unit}") 
+else:
+    print(f"Cannot convert your weight to either of the given units") 
